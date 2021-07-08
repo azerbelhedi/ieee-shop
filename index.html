@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="./css//style.css">
+    <link rel="stylesheet"
+        href="./css/panel.css">
+    <link rel="stylesheet"
+        href="./css/products.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="navbar-section">
+            <div class="navbar-item">
+                <a href="/"
+                    class="no-link">
+                    admin
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="/client.html"
+                    class="no-link">
+                    client
+                </a>
+            </div>
+        </div>
+        <div class="body-section">
+            <div class="left-section">
+                <div class="products-container"
+                    id="products-container">
+                    <div class="product-box"
+                        id="product-1">
+                        <img src="https://www.notebookcheck.com/uploads/tx_nbc2/Asus-Eee-PC-1225C-600x460.jpg"
+                            alt="">
+                        <div class="data-section">
+                            <div class="product-name">
+                                Asus505XJ
+                            </div>
+                            <div class="product-price">
+                                1032 DT (32 pieces)
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="product-box"
+                        id="product-2">
+                        <img src="https://www.notebookcheck.com/uploads/tx_nbc2/Asus-Eee-PC-1225C-600x460.jpg"
+                            alt="">
+                        <div class="data-section">
+                            <div class="product-name">
+                                Asus505XJ
+                            </div>
+                            <div class="product-price">
+                                1032 DT (32 pieces)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="panel">
+                    <div class="top-section">
+                        <h1>Admin Panel</h1>
+                    </div>
+                    <div class="form-section">
+                        <form id="product-form">
+                            <input type="text"
+                                name="name"
+                                id="name"
+                                placeholder="name">
+
+                            <input type="number"
+                                name="price"
+                                id="price"
+                                min="0"
+                                placeholder="price">
+
+                            <input type="number"
+                                name="quantity"
+                                id="quantity"
+                                min="0"
+                                placeholder="quantity">
+
+                            <input type="url"
+                                name="picture"
+                                id="picture"
+                                placeholder="picture">
+
+                            <center>
+                                <button class="cool-button"
+                                    id="add-button"
+                                    onclick="handleSaveEditButton()">add</button>
+                                <button class="cool-button"
+                                    id="delete-button"
+                                    onClick="handleDeleteButton()"> delete</button>
+                            </center>
+
+                        </form>
+                    </div>
+                    <div class="bottom-section">
+                        <button class="cool-button"
+                            onClick="resetForm()">new</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script/data.js"></script>
+<script src="script/ui.js"></script>
+<script src="script/main.js"></script>
+
+</html>

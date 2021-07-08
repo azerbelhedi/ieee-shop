@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.page-container {
+    background-image: linear-gradient(45deg, rgb(0, 97, 170), rgb(0, 93, 163));
+    height: 100vh;
+    width: 100vw;
+}
+
+.page-container .navbar-section {
+    background-color: rgba(245, 245, 245, 0.892);
+    display: flex;
+    justify-content: center;
+}
+
+.page-container .navbar-section .navbar-item {
+    margin: 15px 20px;
+}
+
+.page-container .navbar-section .navbar-item a {
+    color: rgb(0, 97, 170);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.no-link {
+    text-decoration: none;
+}
+
+.body-section {
+    /* background-color: red; */
+    display: flex;
+}
+
+.body-section .left-section {
+    width: 70%;
+    /* background-color: green; */
+}
+
+.body-section .right-section {
+    width: 30%;
+    /* background-color: yellow; */
+}
